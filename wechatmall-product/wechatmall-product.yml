@@ -43,10 +43,6 @@ spring:
         wall:
           config:
             multi-statement-allow: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka.com:7001/eureka/
 
 # Mybatis 配置
 mybatis:
