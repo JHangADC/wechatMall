@@ -1,0 +1,19 @@
+server:
+  port: 8000
+zuul:
+  #全部服务忽略敏感头（即全部服务可以传递cookie）
+  sensitive-headers:
+  prefix: /mall
+  ignored-services:
+    "*"
+  routes:
+    wechatmall-product: /product-proxy/**
+    wechatmall-order: /order-proxy/**
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
