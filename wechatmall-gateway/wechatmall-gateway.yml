@@ -9,6 +9,7 @@ zuul:
   routes:
     wechatmall-product: /product-proxy/**
     wechatmall-order: /order-proxy/**
+    wechatmall-user: /user-proxy/**
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
